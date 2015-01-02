@@ -6,7 +6,8 @@
   "devDependencies" : {
     "tap" : "~0.3.0",
     "tape" : "~0.1.1",
-    "underscore": "latest"
+    "underscore": "latest",
+    "mathjs":"latest"
   },
   "scripts" : {
     "test" : "tap test/*.js"

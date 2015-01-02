@@ -6,7 +6,7 @@ var gs = require('../');
  */
 test('dummy test', function (t) {
 	
-    t.equals(1, 1);
+    t.equals(1,1);
     t.end();
    
 });
