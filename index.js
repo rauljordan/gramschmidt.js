@@ -11,7 +11,7 @@ function gs() {
 	var x2 = vectors[1];
 	var orthoVectors = [normalize(x1)];
 
-	orthoVectors.push( math.subtract( x2, math.multiply( math.multiply(x2, orthoVectors[0]), orthoVectors[0] ) ) );
+	orthoVectors.push( normalize(math.subtract( x2, math.multiply( math.dot(x2, orthoVectors[0]), orthoVectors[0] ) ) ) );
 	return orthoVectors;
 
 }
@@ -34,4 +34,4 @@ function normalize(vector) {
 }
 
 
-
+console.log(gs([1,1], [2,1]));
