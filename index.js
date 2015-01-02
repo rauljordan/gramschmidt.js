@@ -39,6 +39,24 @@ function recursiveVectorSum (vectors) {
 	}
 }
 
+/**
+ * Handy helper function for checking if a list of
+ * n-dimensional vectors all have equal sizes
+ * @param  {Array or Arrays} 
+ * @return {Boolean}         
+ */
+function vectorSizesArentEqual (vectors) {
+
+	for (var i = 0; i < vectors.length; i++) {
+		if (i !== 0) {
+			if (vectors[i].length !== vectors[i - 1].length) {
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
 
 
 /**
@@ -50,6 +68,11 @@ function recursiveVectorSum (vectors) {
 function gramSchmidt() {
 
 	var vectors = Array.prototype.slice.call(arguments);
+
+	if (vectorSizesArentEqual(vectors)) {
+		throw "All Vector Sizes Must Match";
+	}
+
 	var orthoVectors = [];
 
 	for (var i = 0; i < vectors.length; i++) {
@@ -80,4 +103,3 @@ function gramSchmidt() {
 
 module.exports = gramSchmidt;
 
-console.log(gramSchmidt([2,2,2], [1, 0, -1], [0,3,1]));
