@@ -2,7 +2,7 @@
 
 Implements gram schmidt on a set of basis vectors
 
-[![Build Status](https://travis-ci.org/rauljordan/niche.js.svg?branch=master)](https://travis-ci.org/rauljordan/niche.js)
+[![Build Status](https://travis-ci.org/rauljordan/gramschmidt.js.svg?branch=master)](https://travis-ci.org/rauljordan/gramschmidt.js)
 
 # example
 
