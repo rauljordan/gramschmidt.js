@@ -3,11 +3,13 @@
   "version" : "1.0.0",
   "description" : "implements gram schmidt process on a set of basis vectors",
   "main" : "index.js",
-  "devDependencies" : {
-    "tap" : "~0.3.0",
-    "tape" : "~0.1.1",
+  "dependencies" : {
     "underscore": "latest",
     "mathjs":"latest"
+  },
+  "devDependencies" : {
+    "tap" : "~0.3.0",
+    "tape" : "~0.1.1"
   },
   "scripts" : {
     "test" : "tap test/*.js"
