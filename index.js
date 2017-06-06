@@ -87,7 +87,7 @@ function gramSchmidt() {
 			for (var j = 0; j < orthoVectors.length; j++) {
 				var res = math.multiply(math.dot(vectors[i], orthoVectors[j]), orthoVectors[j]);
 				projections.push(res);
-				console.log(projections);
+				//console.log(projections);
 			}
 
 			var totalProjection = recursiveVectorSum(projections);
